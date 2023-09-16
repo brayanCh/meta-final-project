@@ -1,20 +1,14 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import Navbar from './bar';
-import './App.css'
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './pages/home';
 
 function App()
 {
-    const [count, setCount] = useState<number>(0);
 
     return (
         <>
-            <div>
-                <Navbar />
-                <a href="https://vitejs.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-            </div>
+            <Navbar />
+            <Home />
         </>
     )
 }
