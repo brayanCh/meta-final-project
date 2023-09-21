@@ -58,6 +58,10 @@ const styles = {
         fontFamily: 'KarlaBold',
         fontSize: '1.2rem',
         padding: '10px 20px',
+        borderRadius: '10px',
+        outline: 'none',
+        border: 'none',
+        textDecoration: 'none',
     },
     rest_content: {
         width: '100vw',

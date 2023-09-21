@@ -27,7 +27,13 @@ const styles = {
     pageLogo: {
         height: '50px',
         resizeMode: 'contain',
+    },
+    img_link: {
+        height: '50px',
+        width: '50px',
         position: 'absolute',
+        padding: '0px',
+        margin: '0px',
     },
 }
 

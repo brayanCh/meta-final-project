@@ -1,7 +1,8 @@
-import hamburguerMenu from '../assets/hamburguer.png';
+//import hamburguerMenu from '../assets/hamburguer.png';
 import littleLemonLogo from '../assets/LogoLittleLemon.png';
 import { useState } from 'react';
 import styles from './styles';
+import { Link } from 'react-router-dom';
 
 
 function Navbar()
@@ -10,10 +11,14 @@ function Navbar()
 
     return (
         <nav style={styles.container}>
+            {/*
             <button style={styles.menu} onClick={() => setShowMenu(!showMenu)}>
                 <img src={hamburguerMenu} alt="Menu" style={styles.menuImg} />
             </button>
-            <img style={styles.pageLogo} src={littleLemonLogo} alt="main logo" />
+              */}
+            <Link style={styles.img_link} to={"/"} style={styles.link}>
+                <img style={styles.pageLogo} src={littleLemonLogo} alt="main logo" />
+            </Link>
         </nav>
     );
 }

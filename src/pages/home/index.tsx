@@ -16,8 +16,8 @@ function Home()
                         <p style={styles.paragraph}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in eros ultrices, imperdiet erat vel, pharetra risus. Curabitur at hendrerit felis, ac finibus tellus. Ut finibus vestibulum metus, eget tempus arcu bibendum in.
                         </p>
-                        <button style={styles.reserveButton}>Reserve a table</button>
-                    </div>  
+                        <Link to={"/reserve_table"} style={styles.reserveButton}>Reserve a table</Link>
+                    </div>
                     <div style={styles.second_column}>
                         <img style={styles.img} src={imageFood} alt="reserve" className="reserve" />
                     </div>
