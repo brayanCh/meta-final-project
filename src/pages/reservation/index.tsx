@@ -100,13 +100,15 @@ function Reservation ()
     return (
         <>
             <Navbar />
-            <section style={styles.first_section}>
+                {// @ts-ignore
+            }<section style={styles.first_section}>
                 <h1 style={styles.yellow_title}>Reserve a table</h1>
                 <div>
                     {/*<img src={cakeImg} style={styles.img}/> */}
                     <p style={styles.paragraph_first_sec}>We need some details about the reservation.</p>
                 </div>
-                <form onSubmit={onSubmit} style={styles.col}>
+                {// @ts-ignore
+                }<form onSubmit={onSubmit} style={styles.col}>
                     <h3 style={styles.white_label}>Date</h3>
                     <input value={date} onChange={(t) => setDate(t.currentTarget.value)} type="date" style={styles.input_base}/>
                     <h3 style={styles.white_label}>Time</h3>
@@ -114,7 +116,7 @@ function Reservation ()
                     <h3 style={styles.white_label}>Amount of tables</h3>
                     <input value={amountOfTables} onChange={(t) => setAmountOfTables(Number(t.currentTarget.value))} type="number" style={styles.input_base}/>
                     <h3 style={styles.white_label}>Your name</h3>
-                    <input value={name} onChange={(t) => setName(t.currentTarget.value)} type="text" style={styles.input_base}/>
+                    <input data-testid="name" value={name} onChange={(t) => setName(t.currentTarget.value)} type="text" style={styles.input_base}/>
                     <h3 style={styles.white_label}>Your email adress</h3>
                     <input value={email} onChange={(t) => setEmail(t.currentTarget.value)} type="email" style={styles.input_base}/>
                     <h3 style={styles.white_label}>Your phone number (optional)</h3>
